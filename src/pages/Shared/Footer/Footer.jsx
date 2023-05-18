@@ -1,32 +1,38 @@
-
+import { FaFacebook, FaGift, FaGithub } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <footer className="footer p-10 bg-pink-200 text-base-content">
+        <footer className="footer p-10 bg-fuchsia-300 text-black-content">
   <div>
-  <img   src={`https://i.ibb.co/m5r510q/logoo.png`} className="w-30 h-20"/>
-    <p>© Disney, All Rights Reserved | Terms of Use | Additional Content Information | Privacy Policy |  Your US State Privacy Rights</p>
+   <img className="w-[100px]" src={`https://i.ibb.co/m5r510q/logoo.png`} alt="" />
+    <p>Sign up for our emails to get the inside <br /> scoop on special offers and new products.</p>
+    <p>Login with</p>
+   <div className='flex gap-2 w-[100px]'> <p><FaFacebook></FaFacebook> </p>
+   <p><FaGithub></FaGithub></p></div>
+    
   </div> 
   <div>
-    <span className="footer-title">Services</span> 
-    <a className="link link-hover">Branding</a> 
-    <a className="link link-hover">Design</a> 
-    <a className="link link-hover">Marketing</a> 
-    <a className="link link-hover">Advertisement</a>
+    <span className="footer-title">Characters</span> 
+    <a className="link link-hover">Disney</a> 
+    <a className="link link-hover">Star Wars</a> 
+    <a className="link link-hover">Pixar</a> 
+    <a className="link link-hover">Avengers</a>
   </div> 
   <div>
-    <span className="footer-title">Company</span> 
-    <a className="link link-hover">About us</a> 
-    <a className="link link-hover">Contact</a> 
-    <a className="link link-hover">Jobs</a> 
-    <a className="link link-hover">Press kit</a>
+    <span className="footer-title">Disney Gift Cards</span> 
+    <a className="link link-hover">About shopDisney</a> 
+    <a className="link link-hover">Disney® Visa® Card</a> 
+    <a className="link link-hover">Personalization Shop</a> 
+    <a className="link link-hover">Account Info</a>
   </div> 
   <div>
-    <span className="footer-title">Legal</span> 
+    <span className="footer-title">Disney World</span> 
+    <a className="link link-hover">Legal</a>
     <a className="link link-hover">Terms of use</a> 
     <a className="link link-hover">Privacy policy</a> 
-    <a className="link link-hover">Cookie policy</a>
+    Copyright © 2023 - All right reserved by Disney World
   </div>
+  
 </footer>
 
     );

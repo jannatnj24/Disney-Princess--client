@@ -1,6 +1,8 @@
-import NavBar from "../../Shared/NavBar/NavBar";
+import Discount from "../../Shared/ExtraSection/Discount";
+import ExtraSection1 from "../../Shared/ExtraSection/ExtraSection1";
 import Banner from "../Banner/Banner";
 import Gallery from "../Gallery/Gallery";
+
 
 
 const Home = () => {
@@ -9,6 +11,9 @@ const Home = () => {
            <Banner></Banner>
            <Gallery></Gallery>
           <h4>this home</h4>
+          <ExtraSection1></ExtraSection1>
+          <Discount></Discount>
+          
         </div>
     );
 };

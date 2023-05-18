@@ -6,7 +6,7 @@ const Gallery = () => {
             <div>
                 <h4 className="text-center font-bold text-5xl m-6"> Toy Collection</h4>
             </div>
-        <div className="bg-fuchsia-100 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 m-10">
+        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 m-10">
         <div className="aos-item" data-aos="fade-up">
           <img   src={`https://i.ibb.co/zrshhHC/1.jpg`} alt="" className="w-[600px] h-[300px] rounded" />
         </div>

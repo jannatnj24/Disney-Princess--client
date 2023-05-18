@@ -18,10 +18,10 @@ const Banner = () => {
   </div>
 </div> 
 <div className="flex justify-center w-full py-2 gap-2">
-  <a href="#item1" className="btn  bg-blue-700 text-slate-50">1</a> 
-  <a href="#item2" className="btn  bg-blue-700 text-slate-50">2</a> 
-  <a href="#item3" className="btn  bg-blue-700 text-slate-50">3</a> 
-  <a href="#item4" className="btn  bg-blue-700 text-slate-50">4</a>
+  <a href="#item1" className="btn  bg-fuchsia-600 text-slate-50">1</a> 
+  <a href="#item2" className="btn  bg-fuchsia-600 text-slate-50">2</a> 
+  <a href="#item3" className="btn  bg-fuchsia-600 text-slate-50">3</a> 
+  <a href="#item4" className="btn  bg-fuchsia-600 text-slate-50">4</a>
 </div>
         </div>
     );
