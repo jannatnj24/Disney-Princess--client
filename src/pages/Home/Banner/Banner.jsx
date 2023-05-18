@@ -5,7 +5,7 @@ const Banner = () => {
         <div>
             <div className="carousel w-full">
   <div id="item1" className="carousel-item w-full">
-    <img src={`https://i.ibb.co/RPY3yw2/b0.jpg`} className="w-full h-[600px]" />x
+    <img src={`https://i.ibb.co/RPY3yw2/b0.jpg`} className="w-full h-[600px]" />
   </div> 
   <div id="item2" className="carousel-item w-full">
   <img src={`https://i.ibb.co/ZGQr8TY/03.jpg`} className="w-full h-[600px]" />
