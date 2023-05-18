@@ -26,7 +26,7 @@ const Footer = () => {
     <a className="link link-hover">Account Info</a>
   </div> 
   <div>
-    <span className="footer-title">Disney World</span> 
+    <span className="footer-title">Disney World </span> 
     <a className="link link-hover">Legal</a>
     <a className="link link-hover">Terms of use</a> 
     <a className="link link-hover">Privacy policy</a> 
