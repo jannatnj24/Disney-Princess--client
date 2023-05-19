@@ -4,7 +4,7 @@ const Gallery = () => {
     return (
         <div>
             <div>
-                <h4 className="text-center font-bold text-5xl m-6"> Toy Collection</h4>
+                <h4 className="text-center font-bold text-5xl m-6"> Gallery</h4>
             </div>
         <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 m-10">
         <div className="aos-item" data-aos="fade-up">

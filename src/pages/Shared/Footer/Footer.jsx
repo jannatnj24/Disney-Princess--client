@@ -1,4 +1,4 @@
-import { FaFacebook, FaGift, FaGithub } from 'react-icons/fa';
+import { FaFacebook, FaGift, FaGithub, FaGoogle, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
     return (
@@ -8,7 +8,7 @@ const Footer = () => {
     <p>Sign up for our emails to get the inside <br /> scoop on special offers and new products.</p>
     <p>Login with</p>
    <div className='flex gap-2 w-[100px]'> <p><FaFacebook></FaFacebook> </p>
-   <p><FaGithub></FaGithub></p></div>
+   <p><FaGithub></FaGithub></p><p><FaTwitter></FaTwitter></p><p><FaGoogle></FaGoogle></p></div>
     
   </div> 
   <div>

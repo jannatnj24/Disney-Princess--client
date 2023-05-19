@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../../AuthPovider/AuthPovider';
 
 const NavBar = () => {
+    const {user,logOut}=useContext(AuthContext);
+  const handleLogOut = () => {
+      logOut()
+          .then()
+          .catch(error => console.log(error));
+  }
     return (
         <div className="navbar bg-fuchsia-600">
         <div className="navbar-start">
@@ -29,7 +36,8 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn mr-5">login</a>
+          {user && <img className='rounded-full w-[50px] m-4' src={user.photoURL}  /> }
+           {user ? <button onClick={handleLogOut} className="btn btn-outline bg-lime-100 m-4">Log Out</button>:<Link to="/login" className="btn  bg-rose-200 hover:bg-lime-100 text-black mx-4">Login</Link> }
         </div>
       </div>
     );
