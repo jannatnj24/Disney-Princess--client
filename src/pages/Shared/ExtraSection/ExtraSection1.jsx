@@ -7,7 +7,7 @@ const ExtraSection1 = () => {
             <h3 className='mt-4 mb-4 text-center text-3xl text-black font-bold'> Disney dolls Character  </h3>
         </div>
         <div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 m-4">
+        <div className="bg-fuchsia-50 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 m-4">
         <div className="aos-item" data-aos="fade-up">
           <img   src={`https://i.ibb.co/D1jDBTd/9773cea7861abd7e458cb761b08087ec.png`} alt="Image 1" className="w-[600px] h-[300px] rounded" />
           <h3 className=' text-2xl text-fuchsia-700'>Cinderella</h3>

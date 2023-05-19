@@ -1,0 +1,55 @@
+{
+    "Disney": [
+      {
+        "name": "Disney-Princess",
+        "toys": [
+            {
+                "picture": "https://i.ibb.co/vZwqghy/rupanzel.jpg",
+                "name": "Rapunzel",
+                "price": "$60.50",
+                "rating": 3.5
+              },
+              {
+                "picture": "https://i.ibb.co/mSbH95c/Aurora.jpg",
+                "name": "Aurora",
+                "price": "$50.25",
+                "rating": 3.0
+              }
+        ]
+      },
+      {
+        "name": "Marvel,",
+        "toys": [
+            {
+                "picture": "https://i.ibb.co/yqXRhT0/america.webp",
+                "name": "Captain-America",
+                "price": "$19.99",
+                "rating": 4.9
+              },
+              {
+                "picture": "https://i.ibb.co/FBP83gq/iron.jpg",
+                "name": "Iron-Man ",
+                "price": "$43.19",
+                "rating": 4.8
+              }
+        ]
+      },
+      {
+        "name": "Pixar",
+        "toys": [
+            {
+                "picture": "https://i.ibb.co/r3hN7z0/woody.jpg",
+                "name": "Woody",
+                "price": "$99.99",
+                "rating": 4.7
+              },
+              {
+                "picture": "https://i.ibb.co/CQcYKDD/pix.jpg",
+                "name": "Jessie",
+                "price": "$73.88",
+                "rating": 4.9
+              }
+        ]
+      }
+    ]
+  }
