@@ -39,7 +39,7 @@ const MyToy = () => {
           <td>{Toy.name}</td> 
           <td><img className='rounded w-[80px]' src={Toy.pictureUrl} alt="" /></td> 
           
-          <td>{Toy.subCategory}</td> 
+          <td>{Toy.subCategory}</td > 
           <td>{Toy.price}</td> 
           <td>{Toy.quantity}</td>
           <td>
