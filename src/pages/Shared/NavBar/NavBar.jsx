@@ -18,9 +18,10 @@ const NavBar = () => {
             </label>
             <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
 
-            <li><Link className='' to="/">Home</Link> </li>
+            <li><Link className='text-white' to="/">Home</Link> </li>
             <li><Link className='text-white' to="/AllToys">All Toys</Link> </li>
             <li><Link className='text-white' to="/AddAToy">Add A Toy</Link> </li>
+            <li><Link className='text-white' to="/myToy">My Toy</Link> </li>
             <li><Link className='text-white' to="/Blog">Blog</Link> </li>
                 
             </ul>
@@ -32,6 +33,7 @@ const NavBar = () => {
            <li><Link className='text-white' to="/">Home</Link> </li>
             <li><Link className='text-white' to="/AllToy">all toy</Link> </li>
             <li><Link className='text-white' to="/AddToy">Add toy</Link> </li>
+            <li><Link className='text-white' to="/myToy">My toy</Link> </li>
             <li><Link className='text-white' to="/Blog">Blog</Link> </li>
           </ul>
         </div>

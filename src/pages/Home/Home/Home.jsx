@@ -1,3 +1,4 @@
+import Category from "../../../Category/Category";
 import Discount from "../../Shared/ExtraSection/Discount";
 import ExtraSection1 from "../../Shared/ExtraSection/ExtraSection1";
 import Banner from "../Banner/Banner";
@@ -10,7 +11,7 @@ const Home = () => {
         <div className="bg-lime-50">
            <Banner></Banner>
            <Gallery></Gallery>
-          <h4>this home</h4>
+          <Category></Category>
           <ExtraSection1></ExtraSection1>
           <Discount></Discount>
           
