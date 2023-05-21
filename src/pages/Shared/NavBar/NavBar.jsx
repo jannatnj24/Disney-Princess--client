@@ -26,7 +26,7 @@ const NavBar = () => {
                 
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-lg text-white">Disney World</a>
+          <img className="w-[100px]" src={`https://i.ibb.co/m5r510q/logoo.png`} alt="" />
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">

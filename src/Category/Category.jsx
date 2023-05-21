@@ -20,7 +20,7 @@ const Category = () => {
                 <h2>Category</h2>
             </div>
             <Tabs>
-                <TabList className='text-black-3xl m-4'>
+                <TabList className='text-black-3xl m-4 '>
                     <Tab>Disney-Princess</Tab>
                     <Tab>Marvel</Tab>
                     <Tab>Pixar</Tab>

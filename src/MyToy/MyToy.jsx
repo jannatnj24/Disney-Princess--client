@@ -37,13 +37,13 @@ const MyToy = () => {
             <th>{index+1}</th> 
           <td>{Toy.sellerName}</td> 
           <td>{Toy.name}</td> 
-          <td><img className='rounded w-[80px]' src={Toy.pictureUrl} alt="" /></td> 
+          <td><img className ='rounded w-[80px]' src={Toy.pictureUrl} alt="" /></td> 
           
-          <td>{Toy.subCategory}</td > 
+          <td>{Toy.subCategory}</td> 
           <td>{Toy.price}</td> 
           <td>{Toy.quantity}</td>
           <td>
-          <button className="btn btn-outline bg-red-400">View Details</button>
+          <button className="btn btn-outline bg-fuchsia-400">View Details</button>
             </td>
           </tr>
         ))}

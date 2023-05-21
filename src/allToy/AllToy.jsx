@@ -38,7 +38,7 @@ const AllToy = () => {
               <td>{Toys.price}</td> 
               <td>{Toys.quantity}</td>
               <td>
-              <button className="btn btn-outline bg-red-400">View Details</button>
+              <button className="btn btn-outline bg-fuchsia-400">View Details</button>
                 </td>
               </tr>
             ))}

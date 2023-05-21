@@ -77,7 +77,7 @@ const AddToy = () => {
         <textarea id="description" {...register('description')} className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-blue-500" />
       </div>
 
-      <button type="submit" className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Submit</button>
+      <button type="submit" className="px-4 py-2 text-black bg-fuchsia-400  rounded hover:bg-blue-600">Submit</button>
     </form>
             </div>
         </div>
