@@ -29,8 +29,8 @@ const NavBar = () => {
           <img className="w-[100px]" src={`https://i.ibb.co/m5r510q/logoo.png`} alt="" />
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-           <li><Link className='text-white' to="/">Home</Link> </li>
+          <ul className="menu menu-horizontal px-1" >
+           <li><Link className='text-white' to="/">Home</Link></li>
             <li><Link className='text-white' to="/AllToy">all toy</Link>  </li>
             <li><Link className='text-white' to="/AddToy">Add toy</Link> </li>
             <li><Link className='text-white' to="/myToy">My toy</Link> </li>
