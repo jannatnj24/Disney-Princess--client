@@ -9,20 +9,21 @@ const MyToy = () => {
 
     const [MToys, setMToys] = useState([]);
     const { user } = useContext(AuthContext);
+    const [isUpdate,setIsUpdate] = useState(true);
     useEffect(() => {
-        fetch(`http://localhost:5000/addDolls/${user?.email}`)
+        fetch(`https://disney-princess-server.vercel.app/addDolls/${user?.email}`)
             .then((res) => res.json())
             .then((data) => {
                 console.log(data);
                 setMToys(data);
             });
-    }, [user]);
+    }, [user,isUpdate]);
 
     const handleDelete = id => {
         console.log(id)
         const proceed = confirm(' want you  to delete this toy?');
         if (proceed) {
-            fetch(`http://localhost:5000/addDolls/${id}`, {
+            fetch(`https://disney-princess-server.vercel.app/addDolls/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
@@ -72,6 +73,8 @@ const MyToy = () => {
                                     Toy={Toy}
                                     handleDelete={handleDelete}
                                     index={index}
+                                    isUpdate ={isUpdate}
+                                    setIsUpdate={setIsUpdate}
                                 ></HandleDelete>
                             ))}
                         </tbody>

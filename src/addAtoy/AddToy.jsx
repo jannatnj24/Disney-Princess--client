@@ -13,7 +13,7 @@ const AddToy = () => {
     const { register, handleSubmit } = useForm();
 
     const onSubmit = (data) => {
-        fetch("http://localhost:5000/addDolls", {
+        fetch("https://disney-princess-server.vercel.app/addDolls", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data),

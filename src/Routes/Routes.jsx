@@ -9,6 +9,7 @@ import SignUp from "../userLogin/SignUp";
 import PrivateRoute from "./PrivateRoute";
 import MyToy from "../MyToy/MyToy";
 import Error from "../Errorpage/Error";
+import SingleToy from "../allToy/SingleToy";
 
 const router = createBrowserRouter([
     {
@@ -23,6 +24,11 @@ const router = createBrowserRouter([
         {
           path:'/allToy',
           element: <PrivateRoute><AllToy></AllToy></PrivateRoute>,
+        },
+        {
+          path:'/toy/:id',
+          element: <PrivateRoute><SingleToy/></PrivateRoute>,
+          loader: ({params})=> fetch(`https://disney-princess-server.vercel.app/doll/${params.id}`)
         },
         {
           path:'/addToy',

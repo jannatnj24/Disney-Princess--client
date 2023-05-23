@@ -1,6 +1,7 @@
 import React from 'react';
+import UpdateToy from './UpdateToy';
 
-const HandleDelete = ({Toy,handleDelete,index}) => {
+const HandleDelete = ({Toy,handleDelete,index,isUpdate,setIsUpdate}) => {
     const {_id}=Toy;
     return (
         
@@ -13,7 +14,11 @@ const HandleDelete = ({Toy,handleDelete,index}) => {
           <td>{Toy.subCategory}</td> 
           <td>{Toy.price}</td> 
           <td>{Toy.quantity}</td>
-          <td> <button className="btn btn-outline bg-fuchsia-400">Update</button></td>
+          <td><UpdateToy 
+          id={_id}
+          isUpdate ={isUpdate}
+          setIsUpdate={setIsUpdate}
+          /></td>
           <td>
           <button onClick={()=>handleDelete(_id)} className="btn btn-outline bg-fuchsia-400">Delete</button>
             </td>

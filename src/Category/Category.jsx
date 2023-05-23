@@ -10,7 +10,7 @@ const Category = () => {
     const [Data, setData] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/dataCollections')
+        fetch('https://disney-princess-server.vercel.app/dataCollections')
             .then(res => res.json())
             .then(data => (data.map(newData=>setData(newData))));
     }, [])

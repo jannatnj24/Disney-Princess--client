@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
 
 const AllToy = () => {
     const [Data, setData] = useState([]);
     
     useEffect(() => {
-        fetch(' http://localhost:5000/addDolls')
+        fetch(' https://disney-princess-server.vercel.app/addDolls')
             .then(res => res.json())
 
             .then(data => setData(data));
@@ -41,7 +42,9 @@ const AllToy = () => {
               <td>{Toys.price}</td> 
               <td>{Toys.quantity}</td>
               <td>
+              <Link to={`/toy/${Toys._id}`}>
               <button className="btn btn-outline bg-fuchsia-400">View Details</button>
+              </Link>
                 </td>
               </tr>
             ))}
