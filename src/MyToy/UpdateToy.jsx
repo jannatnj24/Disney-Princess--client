@@ -29,7 +29,7 @@ const onSubmit=data=>{
     return (
         <div>
             {/* The button to open modal */}
-<label htmlFor={id} className="btn">Update</label>
+<label htmlFor={id} className="btn bg-fuchsia-400 text-black">Update</label>
 
 {/* Put this part before </body> tag */}
 <input type="checkbox" id={id} className="modal-toggle" />
@@ -44,9 +44,9 @@ const onSubmit=data=>{
  />
 <input type="number" placeholder="Price" className="input input-bordered input-secondary w-full max-w-xs mb-2"  defaultValue={toy?.price} {...register('price')}/>
 <input type="number" placeholder="Quantity" className="input input-bordered input-secondary w-full max-w-xs mb-2"  defaultValue={toy?.quantity} {...register('quantity')}/>
-<button type="submit"  htmlFor={id} className=" modal-action px-4 py-2 text-black bg-fuchsia-400  rounded hover:bg-blue-600">Submit</button>
+<button type="submit"  htmlFor={id} className=" modal-action  py-4 px-4 text-black bg-fuchsia-400 w-35  mx-auto rounded hover:bg-blue-600">Submit</button>
 <div className="modal-action">
-  <label htmlFor={id} className="btn" type='submit'>close</label>
+  <label htmlFor={id} className="btn bg-fuchsia-400" type='submit'>close</label>
 </div>
 </form>}
   </div>

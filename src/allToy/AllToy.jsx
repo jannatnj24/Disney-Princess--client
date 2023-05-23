@@ -14,7 +14,7 @@ const AllToy = () => {
       console.log(Data);
     return (
         <div>
-            <h4 className='text-center font-bold text-5xl'>  All Toy</h4>
+            <h4 className='text-center font-bold text-5xl m-4'>  All Toy</h4>
             <Helmet>
                     <title>Disney-World | allToy</title>
                 </Helmet>
@@ -43,7 +43,7 @@ const AllToy = () => {
               <td>{Toys.quantity}</td>
               <td>
               <Link to={`/toy/${Toys._id}`}>
-              <button className="btn btn-outline bg-fuchsia-400">View Details</button>
+              <button className="btn btn-outline  bg-fuchsia-400">View Details</button>
               </Link>
                 </td>
               </tr>
