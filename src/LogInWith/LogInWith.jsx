@@ -21,7 +21,7 @@ const LogInWith = () => {
         signInWithPopup(auth,provider)
         .then(result=>{
           const user=result.user;
-          Swal.fire('Hurrah', ' Create account successfully', 'success');
+          Swal.fire('Hurrah', 'login successfully', 'success');
            navigate(from,{replace :true});
           
         })
