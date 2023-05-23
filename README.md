@@ -1,12 +1,12 @@
 # b7a11-toy-marketplace-client-side-jannatnj24
-# Live link: 
+# Live link: https://disney-world-de3fa.web.app/
 
 
 # uses
 
 - React
 - React Router 
-- raw css
+- react hook form
 - firebase
 - Auth 
 - TailwindCSS
