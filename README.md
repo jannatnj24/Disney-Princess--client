@@ -11,6 +11,7 @@
 - Auth 
 - TailwindCSS
 - Spinner
+- Sweet alert2
 - Private route
 - MongoDB
 - CRUD

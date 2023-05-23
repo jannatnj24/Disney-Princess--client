@@ -8,11 +8,13 @@ import Login from "../userLogin/Login";
 import SignUp from "../userLogin/SignUp";
 import PrivateRoute from "./PrivateRoute";
 import MyToy from "../MyToy/MyToy";
+import Error from "../Errorpage/Error";
 
 const router = createBrowserRouter([
     {
       path: "/",
       element: <Main></Main>,
+      errorElement:<Error></Error>,
       children: [
         {
           path:'/',

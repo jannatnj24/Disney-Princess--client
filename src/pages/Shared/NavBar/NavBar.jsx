@@ -39,7 +39,7 @@ const NavBar = () => {
         </div>
         <div className="navbar-end">
           {user && <img className='rounded-full w-[50px] m-4' src={user.photoURL}  /> }
-           {user ? <button onClick={handleLogOut} className="btn btn-outline bg-lime-100 m-4">Log Out</button>:<Link to="/login" className="btn  bg-rose-200 hover:bg-lime-100 text-black mx-4">Login</Link> }
+           {user ? <button onClick={handleLogOut} className="btn btn-outline bg-rose-100 m-4">Log Out</button>:<Link to="/login" className="btn  bg-rose-200 hover:bg-rose-100 text-black mx-4">Login</Link> }
         </div>
       </div>
     );

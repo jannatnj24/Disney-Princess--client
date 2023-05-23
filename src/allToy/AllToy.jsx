@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet';
 
 const AllToy = () => {
     const [Data, setData] = useState([]);
     
     useEffect(() => {
-        fetch(' http://localhost:5000/AddDolls')
+        fetch(' http://localhost:5000/addDolls')
             .then(res => res.json())
 
             .then(data => setData(data));
@@ -12,8 +13,10 @@ const AllToy = () => {
       console.log(Data);
     return (
         <div>
-            <h4>  All Toy</h4>
-           
+            <h4 className='text-center font-bold text-5xl'>  All Toy</h4>
+            <Helmet>
+                    <title>Disney-World | allToy</title>
+                </Helmet>
             <div className="overflow-x-auto ">
         <table className="table table-compact w-full">
           <thead>

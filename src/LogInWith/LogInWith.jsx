@@ -1,8 +1,10 @@
 import { GithubAuthProvider, GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
 import React from 'react';
-import { FaGithub, FaGoogle } from 'react-icons/fa';
+import {  FaGoogle } from 'react-icons/fa';
 import { useLocation, useNavigate } from 'react-router-dom';
 import app from '../firebase/firebase.confing';
+import Swal from 'sweetalert2';
+import 'sweetalert2/dist/sweetalert2.css';
 
 
 const LogInWith = () => {
@@ -12,13 +14,14 @@ const LogInWith = () => {
 
     const auth=getAuth(app);
     const provider = new GoogleAuthProvider();
-    const GitProvider = new GithubAuthProvider();
+    
 
 
     const handelGoogleLogin=()=>{
         signInWithPopup(auth,provider)
         .then(result=>{
           const user=result.user;
+          Swal.fire('Hurrah', ' Create account successfully', 'success');
            navigate(from,{replace :true});
           
         })
@@ -26,22 +29,15 @@ const LogInWith = () => {
           console.log(error.message)
         })
       }
-    const handelGitHubLogin=()=>{
-        signInWithPopup(auth,GitProvider)
-        .then(result=>{
-          const user=result.user;
-           navigate(from,{replace :true});
-          
-        })
-        .catch(error=>{
-          console.log(error.message)
-        })
-      }
+    
+      
     return (
-        <div className='mb-4'>  
+       <div>
+         <div className='mb-4'>  
                <button onClick={handelGoogleLogin} class="btn gap-2 bg-fuchsia-400 hover:bg-rose-200 text-green-950 w-full mb-4"  ><FaGoogle></FaGoogle>Google</button>
-               <button onClick={handelGitHubLogin} class="btn text-black bg-fuchsia-400 hover:bg-rose-200 w-full gap-2"  ><FaGithub></FaGithub>GitHub</button>   
+                
    </div>
+       </div>
     );
 };
 

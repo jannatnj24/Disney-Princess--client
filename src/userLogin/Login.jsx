@@ -2,6 +2,9 @@ import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../AuthPovider/AuthPovider';
 import LogInWith from '../LogInWith/LogInWith';
+import { Helmet } from 'react-helmet';
+import Swal from 'sweetalert2';
+import 'sweetalert2/dist/sweetalert2.css';
 
 
 const Login = () => {
@@ -19,7 +22,9 @@ const Login = () => {
       const email=form.email.value;
       const password=form.password.value;
       console.log(email,password);
+      Swal.fire('Hurrah', ' Login successfully', 'success');
       setError('')
+      
   
       
       SignIn(email,password)
@@ -41,7 +46,11 @@ const Login = () => {
     
     
     return (
-        <div className="hero min-h-screen bg-rose-100">
+        <div>
+            <Helmet>
+                <title>Disney-World | login</title>
+            </Helmet>
+            <div className="hero min-h-screen bg-rose-100">
             <div className="hero-content ">
                
                 <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-lime-100">
@@ -78,6 +87,7 @@ const Login = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 };

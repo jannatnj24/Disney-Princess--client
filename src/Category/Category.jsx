@@ -5,6 +5,7 @@ import ShowData from "./ShowData";
 
 
 
+
 const Category = () => {
     const [Data, setData] = useState([]);
 
@@ -16,11 +17,13 @@ const Category = () => {
     console.log(Data);
     return (
         <div className="text-center">
+             
             <div className="text-center text-5xl font-bold m-6">
                 <h2>Category</h2>
+                
             </div>
             <Tabs>
-                <TabList className='text-black-3xl m-4 '>
+                <TabList className='text-black-3xl m-4'>
                     <Tab>Disney-Princess</Tab>
                     <Tab>Marvel</Tab>
                     <Tab>Pixar</Tab>
