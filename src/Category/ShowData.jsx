@@ -8,7 +8,7 @@ const ShowData = ({ Doll }) => {
                 <figure><img className="h-[400px]" src={picture} alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">Name:{name}</h2>
-                    <h2>Price:{price}</h2>
+                    <h2>Price:${price}</h2>
                     <h2>Rating:{rating}</h2>
                     <div className="card-actions justify-end">
                         <button className="btn btn-primary">View Details</button>
